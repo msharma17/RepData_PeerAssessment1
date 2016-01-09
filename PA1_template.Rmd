@@ -1,7 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Reproducible assignment"
-output: md_document
+output: html_document
 ---
 ```{r}
 library(lattice)
@@ -105,29 +104,3 @@ xyplot(steps ~ interval | daylevel, stepsByDay, type = "l", layout = c(1, 2),
 ```
 
 **We can see at the graph above that activity on the weekday has the greatest peak from all steps intervals.**
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
