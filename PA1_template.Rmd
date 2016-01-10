@@ -1,11 +1,13 @@
 ---
 title: "Reproducible assignment"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 ```{r}
 library(lattice)
 library(knitr)
-opts_chunk$set(echo = TRUE, results = 'hold')
+opts_chunk$set(echo = TRUE , results = "hold")
 ```
 
 ###Loading and preprocessing the data
@@ -15,8 +17,8 @@ activitydata<- read.csv('activity.csv', header = TRUE, sep = ",",
                         colClasses=c("numeric", "character", "numeric"))
 activitydata$date <- as.Date(activitydata$date, "%Y-%m-%d")
 ```
-###What is mean total number of steps taken per day?**
-**Total no of steps taken per day**
+###What is mean total number of steps taken per day?
+
 ```{r}
 Totalsteps<- aggregate(steps ~ date, data = activitydata, sum, na.rm = TRUE)
 ```
